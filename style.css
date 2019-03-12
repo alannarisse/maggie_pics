@@ -1,0 +1,43 @@
+h1, h2, h3, h4 {font-family: 'Chicle', cursive;}
+
+
+* {
+  box-sizing: border-box;
+}
+ body {background-image: url('images/ricepaper_v3.png');}
+header h1 {text-align:center;}
+
+.hero {
+  height: 600px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+
+.hero img {
+  height: 100%;
+  border: 12px solid #fff;
+  box-shadow: 3px 3px 3px #ddd;
+
+}
+
+.thumbnails {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	grid-gap: 1em;
+	margin:10px 20px;
+}
+.thumbnail {
+  display: inline-block;
+  cursor: pointer;
+  min-height:160px;
+  text-align: center;
+}
+
+.thumbnail img:hover {
+  box-shadow: 3px 3px 3px #999;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
